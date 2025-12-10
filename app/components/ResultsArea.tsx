@@ -32,6 +32,7 @@ function DocumentsLoading() {
 }
 
 export async function ResultsArea({ question }: ResultsAreaProps) {
+  "use cache";
   // Fetch documents once for summary generation
   // DocumentsLoader will fetch independently for Suspense demonstration
   // TODO: Wrap with cache() for Next.js 16 caching

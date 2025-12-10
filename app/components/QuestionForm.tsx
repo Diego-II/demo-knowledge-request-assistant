@@ -4,23 +4,26 @@
 // This is intentionally a client component to demonstrate potential hydration patterns
 // In production, this could be optimized with server actions
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useTransition } from "react";
 import { useRouter } from "next/navigation";
 
 export function QuestionForm() {
   const [question, setQuestion] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!question.trim()) return;
 
-    setIsSubmitting(true);
-    // Navigate to results page with question as search param
-    // TODO: This will be replaced with server actions or Ship AI Workflows
-    router.push(`/?question=${encodeURIComponent(question)}`);
+    // Use startTransition to handle navigation state
+    // This properly handles both cached (instant) and uncached navigations
+    startTransition(() => {
+      router.push(`/?question=${encodeURIComponent(question)}`);
+    });
   };
+
+  const isSubmitting = isPending;
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-2xl">
