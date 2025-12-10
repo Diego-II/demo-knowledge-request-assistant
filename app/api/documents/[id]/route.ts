@@ -8,7 +8,7 @@ export async function GET(
   const { id } = await params;
 
   // Simulate API delay
-  await new Promise((resolve) => setTimeout(resolve, 300));
+  await new Promise((resolve) => setTimeout(resolve, 700));
 
   const allDocuments = loadKnowledgeBase();
   const document = allDocuments.find((doc) => doc.id === id);

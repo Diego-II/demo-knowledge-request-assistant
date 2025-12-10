@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { loadKnowledgeBase, calculateRelevance } from "@/lib/utils/knowledge-base";
-import { Document } from "@/lib/types/api";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -14,7 +13,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Simulate API delay
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
   const allDocuments = loadKnowledgeBase();
 
