@@ -2,7 +2,7 @@
 // TODO: This will integrate with Ship AI Gateway for real summaries
 // TODO: Add cache() wrapper for Next.js 16 caching
 
-import { Summary } from "@/lib/utils/api";
+import { Summary } from "@/lib/types/api";
 
 interface SummaryDisplayProps {
   summary: Summary;

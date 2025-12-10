@@ -3,7 +3,7 @@
 // TODO: Add cache() wrapper here for Next.js 16 caching
 // TODO: This will be integrated with Ship AI Workflows for orchestration
 
-import { fetchDocuments } from "@/lib/utils/api";
+import { fetchDocuments } from "@/lib/utils/api-server";
 import { DocumentList } from "./DocumentList";
 
 interface DocumentsLoaderProps {
@@ -15,6 +15,6 @@ export async function DocumentsLoader({ question }: DocumentsLoaderProps) {
   // TODO: Add cache() wrapper: const documents = await cache(() => fetchDocuments(question))();
   const documents = await fetchDocuments(question);
 
-  return <DocumentList documents={documents} />;
+  return <DocumentList documents={documents} question={question} />;
 }
 

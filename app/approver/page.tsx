@@ -6,7 +6,7 @@
 // TODO: Add cache() wrappers for data fetching
 
 import { Suspense } from "react";
-import { fetchDocuments, summarizeWithAIGateway } from "@/lib/utils/api";
+import { fetchDocuments, summarizeWithAIGateway } from "@/lib/utils/api-server";
 import { SummaryEditor } from "../components/SummaryEditor";
 import { SummaryDisplay } from "../components/SummaryDisplay";
 

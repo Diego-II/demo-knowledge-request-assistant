@@ -4,7 +4,7 @@
 // TODO: Integrate with Ship AI Workflows for step-by-step execution
 
 import { Suspense } from "react";
-import { fetchDocuments, summarizeWithAIGateway } from "@/lib/utils/api";
+import { fetchDocuments, summarizeWithAIGateway } from "@/lib/utils/api-server";
 import { DocumentsLoader } from "./DocumentsLoader";
 import { SummaryDisplay } from "./SummaryDisplay";
 

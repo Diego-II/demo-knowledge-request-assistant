@@ -7,7 +7,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Summary, continueWorkflow } from "@/lib/utils/api";
+import { Summary } from "@/lib/types/api";
+import { continueWorkflow } from "@/lib/utils/api-client";
 
 interface SummaryEditorProps {
   initialSummary: Summary;

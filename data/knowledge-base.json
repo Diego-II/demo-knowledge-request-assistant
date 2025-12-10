@@ -1,0 +1,107 @@
+[
+  {
+    "id": "mk8-char-1",
+    "title": "Character Selection Guide - Weight Classes",
+    "content": "Mario Kart 8 Deluxe features three weight classes: Light (Baby Mario, Toad, Shy Guy), Medium (Mario, Luigi, Peach), and Heavy (Bowser, Wario, Donkey Kong). Light characters have better acceleration and handling but lower top speed. Heavy characters have higher top speed and better off-road performance but slower acceleration. Medium characters offer a balanced approach. Your character choice affects your kart's overall stats when combined with vehicle parts.",
+    "source": "mariokart8-guide/character-selection",
+    "relevanceScore": 0.95
+  },
+  {
+    "id": "mk8-char-2",
+    "title": "Best Characters for Competitive Play",
+    "content": "For competitive time trials and online races, heavy characters like Wario, Bowser, or Morton are preferred due to their high top speed. However, for beginners, medium-weight characters like Mario or Peach provide better balance. Light characters excel in 200cc mode where handling and acceleration matter more than raw speed. The meta often favors heavy characters with high-speed builds, but skill level and track selection should also influence your choice.",
+    "source": "mariokart8-guide/competitive-characters",
+    "relevanceScore": 0.92
+  },
+  {
+    "id": "mk8-track-1",
+    "title": "Rainbow Road - Shortcuts and Strategies",
+    "content": "Rainbow Road features several shortcuts: After the first turn, you can cut across the rainbow path to skip a section. Use mushrooms strategically on the anti-gravity sections. The final stretch has a hidden path on the right side that can save significant time. Watch for boost panels in the anti-gravity sections. The track requires precise drifting, especially in 200cc mode where the increased speed makes corners more challenging.",
+    "source": "mariokart8-guide/tracks/rainbow-road",
+    "relevanceScore": 0.88
+  },
+  {
+    "id": "mk8-track-2",
+    "title": "Mount Wario - Shortcut Locations",
+    "content": "Mount Wario is a downhill track with multiple route options. The first major shortcut appears after the initial jump - take the left path through the trees instead of the main road. In the forest section, there's a hidden path on the right that bypasses several turns. The final section has a shortcut through the cave that requires a well-timed mushroom. Mastering these shortcuts can save 5-10 seconds on a single lap.",
+    "source": "mariokart8-guide/tracks/mount-wario",
+    "relevanceScore": 0.90
+  },
+  {
+    "id": "mk8-track-3",
+    "title": "Bowser's Castle - Advanced Techniques",
+    "content": "Bowser's Castle features tight corners and fire hazards. The key shortcut is in the second section where you can use a mushroom to cut across the lava pit, skipping a significant portion of the track. The spinning fire bars require precise timing - drift early to avoid them. In the final section, there's a boost panel on the right side that many players miss. The track rewards aggressive driving and risk-taking with shortcuts.",
+    "source": "mariokart8-guide/tracks/bowsers-castle",
+    "relevanceScore": 0.87
+  },
+  {
+    "id": "mk8-shortcut-1",
+    "title": "Mushroom Shortcuts - When to Use Them",
+    "content": "Mushrooms are essential for taking shortcuts. Save mushrooms for off-road shortcuts that bypass large sections of track. Common shortcut locations include: cutting across grass/dirt patches, jumping over barriers, and taking alternative routes through water or lava. The best shortcuts typically save 3-8 seconds. Don't waste mushrooms on small cuts that only save 1-2 seconds. In time trials, memorize mushroom locations and plan your route accordingly.",
+    "source": "mariokart8-guide/shortcuts/mushroom-strategy",
+    "relevanceScore": 0.93
+  },
+  {
+    "id": "mk8-shortcut-2",
+    "title": "Hidden Shortcuts on Popular Tracks",
+    "content": "Many tracks have hidden shortcuts: Mario Kart Stadium has a grass cut on the final turn. Water Park features an underwater tunnel shortcut. Thwomp Ruins has a secret path through the ruins. Cloudtop Cruise has shortcuts in the cloud sections. Always explore tracks in time trial mode to discover these paths. Some shortcuts require specific vehicle builds with high off-road stats to be effective.",
+    "source": "mariokart8-guide/shortcuts/hidden-paths",
+    "relevanceScore": 0.85
+  },
+  {
+    "id": "mk8-vehicle-1",
+    "title": "Kart Customization - Stats Explained",
+    "content": "Vehicle customization affects four main stats: Speed (top speed on straightaways), Acceleration (how quickly you reach top speed), Weight (affects collisions and off-road), and Handling (cornering ability). Mini-Turbo determines boost duration from drifts. Anti-Gravity Speed affects performance in anti-gravity sections. Popular competitive builds prioritize Speed and Mini-Turbo, sacrificing Acceleration and Handling. Experiment to find builds that match your driving style.",
+    "source": "mariokart8-guide/vehicle-customization/stats",
+    "relevanceScore": 0.94
+  },
+  {
+    "id": "mk8-vehicle-2",
+    "title": "Best Vehicle Combinations for Different Playstyles",
+    "content": "Speed builds: Heavy character + Circuit Special + Slick tires + Super Glider. Balanced builds: Medium character + Standard Kart + Standard tires + Standard Glider. Handling builds: Light character + Biddybuggy + Roller tires + Cloud Glider. For beginners, the balanced build offers the most forgiving experience. Competitive players typically use speed-focused builds. Time trial specialists often use different builds optimized for specific tracks.",
+    "source": "mariokart8-guide/vehicle-customization/builds",
+    "relevanceScore": 0.91
+  },
+  {
+    "id": "mk8-mechanics-1",
+    "title": "Drift Boosting and Mini-Turbo Techniques",
+    "content": "Mastering drift boosts is crucial for competitive play. Hold the drift button while turning to charge a boost. You'll see sparks change color: orange (small boost), blue (medium boost), purple (ultra mini-turbo). Release at the right moment to get the boost. On straight sections, perform 'snaking' - quick left-right drifts to chain mini-turbos. In 200cc, drift earlier and more frequently. The timing window for perfect boosts is tight and requires practice.",
+    "source": "mariokart8-guide/mechanics/drifting",
+    "relevanceScore": 0.96
+  },
+  {
+    "id": "mk8-mechanics-2",
+    "title": "Item Management and Defense Strategies",
+    "content": "Item management separates good players from great ones. Hold defensive items (bananas, shells, coins) behind you to block incoming attacks. Use coins to increase your top speed - always collect them when safe. Save powerful items like stars or bullet bills for critical moments. In first place, you typically get defensive items. In lower positions, you get offensive items. Learn to 'item block' by holding items strategically to protect yourself from red shells.",
+    "source": "mariokart8-guide/mechanics/item-strategy",
+    "relevanceScore": 0.89
+  },
+  {
+    "id": "mk8-mechanics-3",
+    "title": "200cc Mode - Speed and Handling Tips",
+    "content": "200cc mode increases speed by 50%, making tracks significantly more challenging. Braking becomes essential - use the brake button while drifting to control your speed through tight corners. Light characters with high handling become more viable in 200cc. You'll need to drift earlier and brake more frequently. Some shortcuts become impossible without perfect execution. Practice braking techniques in time trials before attempting online races in 200cc.",
+    "source": "mariokart8-guide/mechanics/200cc-guide",
+    "relevanceScore": 0.86
+  },
+  {
+    "id": "mk8-tips-1",
+    "title": "Time Trial Optimization Strategies",
+    "content": "For time trials, use ghost data from world records to learn optimal lines. Focus on maintaining speed through corners with perfect drifts. Memorize boost panel locations and shortcuts. Use mushrooms efficiently - don't waste them on small cuts. Learn the track layout to anticipate upcoming turns. Practice individual sections repeatedly until you can execute them consistently. World record times require near-perfect execution of every technique.",
+    "source": "mariokart8-guide/tips/time-trials",
+    "relevanceScore": 0.84
+  },
+  {
+    "id": "mk8-tips-2",
+    "title": "Online Multiplayer Race Tactics",
+    "content": "In online races, positioning matters more than pure speed. Stay in the top 4 to get better items. Use defensive items proactively when in first place. Save offensive items for the final lap. Learn to read the minimap to anticipate threats. Don't always take the fastest line - sometimes the safer route is better when under fire. Master the art of recovery after being hit - quick recovery can save your race.",
+    "source": "mariokart8-guide/tips/online-racing",
+    "relevanceScore": 0.88
+  },
+  {
+    "id": "mk8-tips-3",
+    "title": "Track-Specific Strategies for Common Courses",
+    "content": "Each track requires different strategies: On straight-heavy tracks like Mario Circuit, prioritize speed builds. On technical tracks like Neo Bowser City, handling and acceleration matter more. Water tracks require good off-road stats. Anti-gravity sections benefit from builds with high anti-gravity speed. Learn the optimal racing line for each track - cutting corners too aggressively can slow you down. Study world record replays to see expert lines.",
+    "source": "mariokart8-guide/tips/track-strategies",
+    "relevanceScore": 0.82
+  }
+]
