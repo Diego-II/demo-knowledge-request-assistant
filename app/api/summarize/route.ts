@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Document, Summary } from "@/lib/types/api";
+import { generateSummaryWithLLM } from "@/lib/utils/ai-gateway";
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,30 +17,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Use top 3 ranked documents (they should already be sorted by relevance)
+    const topDocuments = documents.slice(0, 3);
 
-    // Mock summary - in production, this will call Ship AI Gateway
-    const citations = documents.map((doc) => doc.id);
+    // Generate summary using AI Gateway with LLM
+    const summaryText = await generateSummaryWithLLM(question, topDocuments);
+    const citations = topDocuments.map((doc) => doc.id);
 
-    let summary: Summary;
-    if (documents.length === 0) {
-      summary = {
-        text: `I couldn't find relevant information about "${question}" in the knowledge base. Please try rephrasing your question or asking about Mario Kart 8 characters, tracks, shortcuts, vehicle customization, or game mechanics.`,
-        citations: [],
-      };
-    } else {
-      // Generate a simple summary based on the retrieved documents
-      const topics = documents.map((doc) => doc.title).join(", ");
-      const summaryText = `Based on the retrieved documents about ${topics}, here's what I found regarding "${question}": ${documents
-        .map((doc) => doc.content)
-        .join(" ")}`;
-
-      summary = {
-        text: summaryText,
-        citations,
-      };
-    }
+    const summary: Summary = {
+      text: summaryText,
+      citations,
+    };
 
     return NextResponse.json(summary);
   } catch (error) {
