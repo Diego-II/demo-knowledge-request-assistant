@@ -13,7 +13,8 @@
     "next": "16.0.8",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "vercel": "^49.1.2"
+    "vercel": "^49.1.2",
+    "workflow": "^4.0.1-beta.29"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

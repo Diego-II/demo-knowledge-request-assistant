@@ -1,20 +1,18 @@
-// Server component that fetches documents
+// Server component that displays documents
 // Wrapped in Suspense in the parent component
-// TODO: Add cache() wrapper here for Next.js 16 caching
-// TODO: This will be integrated with Ship AI Workflows for orchestration
+// Now receives documents as props from the workflow to avoid double-fetching
 
-import { fetchDocuments } from "@/lib/utils/api-server";
+import { Document } from "@/lib/types/api";
 import { DocumentList } from "./DocumentList";
 
 interface DocumentsLoaderProps {
+  documents: Document[];
   question: string;
 }
 
-export async function DocumentsLoader({ question }: DocumentsLoaderProps) {
-  // This async operation will be wrapped in Suspense
-  // TODO: Add cache() wrapper: const documents = await cache(() => fetchDocuments(question))();
-  const documents = await fetchDocuments(question);
-
+export function DocumentsLoader({ documents, question }: DocumentsLoaderProps) {
+  // Documents are now provided as props from the workflow execution
+  // This avoids double-fetching and ensures consistency with the summary
   return <DocumentList documents={documents} question={question} />;
 }
 

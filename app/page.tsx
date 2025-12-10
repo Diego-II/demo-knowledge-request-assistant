@@ -3,12 +3,12 @@
 // - Server component composition
 // - Suspense boundaries for async data fetching
 // - Client component integration (QuestionForm)
-// TODO: Add cache() wrappers for data fetching
-// TODO: Integrate with Ship AI Workflows for orchestration
+// - Workflow DevKit integration for knowledge request processing
 
 import { Suspense } from "react";
 import { QuestionForm } from "./components/QuestionForm";
 import { ResultsSection } from "./components/ResultsSection";
+import { SavedDocuments } from "./components/SavedDocuments";
 
 interface HomePageProps {
   searchParams: Promise<{ question?: string }>;
@@ -58,6 +58,9 @@ export default function HomePage({ searchParams }: HomePageProps) {
         <Suspense fallback={<ResultsLoading />}>
           <ResultsSection searchParams={searchParams} />
         </Suspense>
+
+        {/* Saved documents section - shows documents created from approved workflows */}
+        <SavedDocuments />
       </div>
     </div>
   );
