@@ -8,41 +8,10 @@
 
 import { Suspense } from "react";
 import { QuestionForm } from "./components/QuestionForm";
-import { ResultsArea } from "./components/ResultsArea";
+import { ResultsSection } from "./components/ResultsSection";
 
 interface HomePageProps {
   searchParams: Promise<{ question?: string }>;
-}
-
-// Component to handle searchParams and render results
-// This is separated to properly handle Suspense boundaries
-async function ResultsSection({
-  searchParams,
-}: {
-  searchParams: Promise<{ question?: string }>;
-}) {
-  const params = await searchParams;
-  const question = params.question;
-
-  if (!question) {
-    return null;
-  }
-
-  return (
-    <>
-      <div className="mt-8">
-        <ResultsArea question={question} />
-      </div>
-      <div className="mt-8 text-center">
-        <a
-          href={`/approver?question=${encodeURIComponent(question)}`}
-          className="inline-block rounded-lg bg-green-600 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-green-700"
-        >
-          Review & Approve Summary
-        </a>
-      </div>
-    </>
-  );
 }
 
 // Loading fallback for results section
